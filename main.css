@@ -1,0 +1,250 @@
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to top right,rgb(0, 127, 217), rgb(255, 255, 255));
+    justify-content: center;
+    align-items: center;
+}
+#menuCont{
+    position: absolute;
+    z-index: 6;
+    top: 50px;
+    right: 0px;
+    height: 200px;
+    width: 170px;
+    display: none;
+    transition: all 1s;
+}
+#menuCont a{
+    color: white;
+    text-decoration: none;
+}
+#today{
+    padding-left: 8px;
+}
+.chooseCity{
+    height: 20%;
+    width: 100%;
+    background-color: rgba(0, 99, 169, 0.93);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+.chooseCity:hover{
+    background-color: rgb(91, 187, 255);
+    cursor: pointer;
+}
+.name:hover{
+    background-color: azure;
+    color: rgb(0, 64, 109);
+    cursor: pointer;
+}
+#anotherDays{
+    position: relative;
+    width: 150px;
+    text-align: center;
+    padding-left: 10px;
+    transition: all 0.5s;
+}
+body{
+    margin: 0px;
+}
+header{
+    display: flex;
+    background-color: rgba(0, 99, 169, 0.93);
+    height: 50px;
+    justify-content: space-around;
+    font-size: 20px;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    opacity: 100%;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+.city a{
+    color: rgb(26, 164, 219);
+    text-decoration: none;
+}
+.days{
+    padding-top: 13px;
+    padding-right: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.days:hover{
+    background-color: rgb(91, 187, 255);
+}
+#logo{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#timeSR, #timeSS{
+    height: 100px;
+}
+#timeSR{
+    margin-top: 5px;
+}
+#ff1, #ff2{
+    height: 100px;
+   
+}
+#mainContextToday{
+    height: 600px;
+    width: 80%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 70px;
+}
+.allClass{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.formClass{
+    position: absolute;
+    height: 40px;
+    color:  rgb(0, 64, 109);
+    font-size: 25px;
+}
+#form1{
+    top: 90px;
+    left: 40px;
+}
+#form1 :hover{
+    cursor: pointer;
+}
+#form2 :hover{
+    cursor: pointer;
+}
+.city{
+    width: 150px;
+    height: 570px;
+    color: white;
+}
+.name, .name2{
+    background-color: rgb(0, 64, 109);
+    font-size: 25px;
+    width: 150px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.name{
+    transition: all 0.5s;
+}
+.cityContext{
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.feature, #feature2{
+    height: 50px;
+    width: 150px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-bottom: 2px solid white;
+    background-color: rgba(0, 99, 169, 0.93);
+}
+#date{
+    margin-bottom: 20px !important;
+    height: 100px;
+    width: 150px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+    background-color: rgb(0, 64, 109);
+}
+.featureContext{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+    justify-content: space-between;
+}
+#ff1,#ff2, #ff3, #ff4, #ff5{
+    background-color: rgb(0, 64, 109);
+    opacity: 90%; 
+}
+.forecast{
+    height: 500px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    display: none;
+}
+.forecastContext{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#forecastName{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    width: 98%;
+}
+.day{
+    height: 40px;
+    width: 130px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(3, 76, 129);
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+
+.forecastFeatureContainer{
+    margin-top: 174px
+}
+.forecastFeature{
+    height: 50px;
+    width: 130px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-bottom: 2px solid white;
+    background-color: rgb(0, 64, 109);
+    opacity: 90%;
+}
+#form2{
+    top: 145px;
+    left: 30px;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+    <body>
+        <header>
+            <div id="logo">WEATHER</div>
+            <div class="days" id="today">
+                <a href="#todayBlock">Today</a>
+            </div>
+            <div class="days" id="anotherDays">
+                <div id="clicker">Next 5 days</div>
+                <div id="menuCont">
+                    <div class="chooseCity" id="nameK">
+                        <a href="#forecastBlock">Kyiv</a>
+                    </div>
+                    <div class="chooseCity" id="nameM">
+                        <a href="#forecastBlock">Miami</a>
+                    </div>
+                    <div class="chooseCity" id="nameL">
+                        <a href="#forecastBlock">London</a>
+                    </div>
+                    <div class="chooseCity" id="nameB">
+                        <a href="#forecastBlock">Berlin</a>
+                    </div>
+                    <div class="chooseCity" id="nameP">
+                        <a href="#forecastBlock">Paris</a>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        <main>
+            <a id="todayBlock"></a>
+            <div id="mainContextToday">
+                <div class="formClass" id="form1">
+                    <form class="form1">
+                        <input type="radio" id="celsius" value="°C" name="values" checked>
+                        <label for="celsius">°C</label>
+                        <input type="radio" id="fahrenheit" value="F" name="values">
+                        <label for="fahrenheit">F</label>
+                    </form>
+                </div>
+                <div class="allClass">
+                    <div class="city">
+                        <div class="featureContext">
+                            <div class="feature" id="ff1">Sunrise time</div>
+                            <div class="feature" id="ff2">Sunset time</div>
+                            <div class="feature" id="ff3">Temperature</div>
+                            <div class="feature" id="ff4">Wind speed</div>
+                            <div class="feature" id="ff5">Pressure</div>
+                        </div>
+                    </div>
+                    <div class="city" class="kiyv">
+                        <div class="name" id="nameK"><a href="#forecastBlock">Kyiv</a></div>
+                        <div class="cityContext" id="kyiv">
+                            <div class="feature" class="picture"></div>
+                            <div class="feature" class="timeSR" id="timeSR">
+                               
+                            </div>
+                            <div class="feature" class="timeSS" id="timeSS">
+                                
+                            </div>
+                            <div class="feature" class="temperature">
+                                
+                            </div>
+                            <div class="feature" class="wind">
+                                
+                            </div>
+                            <div class="feature" class="pressure">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city" class="miami">
+                        <div class="name" id="nameM"><a href="#forecastBlock">Miami</a></div>
+                        <div class="cityContext" id="miami">
+                            <div class="feature" class="picture">
+                            </div>
+                            <div class="feature" class="timeSR" id="timeSR">
+                                
+                            </div>
+                            <div class="feature" class="timeSS" id="timeSS">
+                               
+                            </div>
+                            <div class="feature" class="temperature">
+                                
+                            </div>
+                            <div class="feature" class="wind">
+                                
+                            </div>
+                            <div class="feature" class="pressure">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city" class="london">
+                        <div class="name" id="nameL"><a href="#forecastBlock">London</a></div>
+                        <div class="cityContext" id="london">
+                            <div class="feature" class="picture"></div>
+                            <div class="feature" class="timeSR" id="timeSR">
+                               
+                            </div>
+                            <div class="feature" class="timeSS" id="timeSS">
+                                
+                            </div>
+                            <div class="feature" class="temperature">
+                                
+                            </div>
+                            <div class="feature" class="wind">
+                                
+                            </div>
+                            <div class="feature" class="pressure">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city" class="berlin">
+                        <div class="name" id="nameB"><a href="#forecastBlock">Berlin</a></div>
+                        <div class="cityContext" id="berlin">
+                            <div class="feature" class="picture"></div>
+                            <div class="feature" class="timeSR" id="timeSR">
+                                
+                            </div>
+                            <div class="feature" class="timeSS" id="timeSS">
+                                
+                            </div>
+                            <div class="feature" class="temperature">
+                                
+                            </div>
+                            <div class="feature" class="wind">
+                                
+                            </div>
+                            <div class="feature" class="pressure">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city" class="paris">
+                        <div class="name" id="nameP" ><a href="#forecastBlock">Paris</a></div>
+                        <div class="cityContext" id="paris">
+                            <div class="feature" class="picture"></div>
+                            <div class="feature" class="timeSR" id="timeSR">
+                                
+                            </div>
+                            <div class="feature" class="timeSS" id="timeSS">
+                               
+                            </div>
+                            <div class="feature" class="temperature">
+                                
+                            </div>
+                            <div class="feature" class="wind">
+                                
+                            </div>
+                            <div class="feature" class="pressure">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="forecast">
+                <div id="forecastName" class="name2">
+                    <div>FORECAST</div>
+                    <div class="cityForecast"></div>
+                </div>
+                <a id="forecastBlock"></a>
+                <div class="formClass" id="form2">
+                    <form class="form2">
+                        <input type="radio" id="celsius" value="°C" name="values" checked>
+                        <label for="celsius">°C</label>
+                        <input type="radio" id="fahrenheit" value="F" name="values">
+                        <label for="fahrenheit">F</label>
+                    </form>
+                </div>
+                <div class="forecastContext">
+                    <div class="forecastFeatureContainer">
+                        <div class="forecastFeature">Temperature</div>
+                        <div class="forecastFeature">Wind speed</div>
+                        <div class="forecastFeature">Pressure</div>
+                    </div>
+                    <div class="day-0">
+                        <div class="day" id="date">Today</div>
+                        <div id="feature2" class="picture">
+
+                        </div>
+                        <div id="feature2" class="temperature">   
+                        </div>
+                        <div id="feature2" class="wind">    
+                        </div>
+                        <div id="feature2" class="pressure">      
+                        </div>
+                    </div>
+                    <div class="day-1">
+                        <div class="day" id="date">Tomorrow</div>
+                        <div id="feature2" class="picture">
+                        </div>
+                        <div id="feature2" class="temperature">   
+                        </div>
+                        <div id="feature2" class="wind">    
+                        </div>
+                        <div id="feature2" class="pressure">      
+                        </div>
+                    </div>  
+                    <div class="day-2">
+                        <div  id="date"></div>
+                        <div id="feature2" class="picture">
+                        </div>
+                        <div id="feature2" class="temperature">   
+                        </div>
+                        <div id="feature2" class="wind">    
+                        </div>
+                        <div id="feature2" class="pressure">      
+                        </div>
+                    </div> 
+                    <div class="day-3">
+                        <div id="date"></div>
+                        <div id="feature2" class="picture">
+                        </div>
+                        <div id="feature2" class="temperature">   
+                        </div>
+                        <div id="feature2" class="wind">    
+                        </div>
+                        <div id="feature2" class="pressure">      
+                        </div>
+                    </div>   
+                    <div class="day-4">
+                        <div  id="date"></div>
+                        <div id="feature2" class="picture">
+                        </div>
+                        <div id="feature2" class="temperature">   
+                        </div>
+                        <div id="feature2" class="wind">    
+                        </div>
+                        <div id="feature2" class="pressure">      
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </main>
+        <script src="get.js"></script>
+        <script src="addToday.js"></script>
+        <script src="change degree.js"></script>
+        <script src="remove.js"></script>
+        <script src="addForecast.js"></script>
+        <script src="connect.js"></script>
+    </body>
+</html>
